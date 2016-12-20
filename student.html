@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="shortcut icon" href="campus.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/student.css">
+  <title>Campus РНП</title>
+</head>
+
+<body>
+
+  <div class="container-fluid">
+
+    <div class="row loading">
+      <div class="col-md-12">
+        <h3>Перегляд РНП (студент)</h3>
+        <hr>
+        <form class="form-horizontal">
+
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="cathedra">Кафедра</label>
+            <div class="col-sm-10">
+              <span class="label label-success" id="cathedra"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="okr">ОКР</label>
+            <div class="col-sm-10">
+              <span class="label label-success" id="okr"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="proftrain">Напрям підготовки</label>
+            <div class="col-sm-10">
+              <span class="label label-success" id="proftrain"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="studyform"">Форма навчання</label>
+            <div class="col-sm-10">
+              <span class="label label-success" id="studyform""></span>
+            </div>
+          </div>
+
+        </form>
+        <div class="spacer"></div>
+      </div>     
+    </div>
+
+    
+    <div class="row loading">
+      <div class="col-md-12">
+        <ul class="nav nav-tabs" id="tabs"></ul>
+        <div class="tab-content"><br></div>
+      </div>
+    </div>  
+
+    <div class="loader">
+      <img src="loader.gif" alt="Loading...">
+    </div> 
+
+  </div>
+
+
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/student.js"></script>
+  <script src="js/jquery.tablesorter.min.js"></script>
+
+</body>
+
+</html>

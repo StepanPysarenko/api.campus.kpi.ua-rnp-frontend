@@ -1,0 +1,88 @@
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/new.css" rel="stylesheet">
+  <link rel="shortcut icon" href="campus.ico" type="image/x-icon">
+  <title>Campus РНП</title>
+
+</head>
+
+<body>
+
+  <div class="container-fluid">
+
+    <div class="row loading">
+      <div class="col-md-12">
+        <h3>Завантаження нового РНП</h3>
+        <hr>
+        <form id="NewRnpForm" class="form-horizontal">
+
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="email">Навчальний рік</label>
+            <div class="col-sm-10">
+              <select id="year" name="studingYearId" class="form-control"><option>-</option></select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="cathedra">Кафедра</label>
+            <div class="col-sm-10">
+              <select id="cathedra" class="form-control"><option>-</option></select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="okr">ОКР</label>
+            <div class="col-sm-10">
+              <select id="okr" class="form-control"><option>-</option></select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="proftrain">Напрям підготовки</label>
+            <div class="col-sm-10">
+              <select id="proftrain" name="profTrainId" class="form-control"><option>-</option></select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="studyform">Форма навчання</label>
+            <div class="col-sm-10">
+              <select id="studyform" name="studyFormId" class="form-control"><option>-</option></select>
+            </div>
+          </div>
+
+          <input type="hidden" name="worksheetId" value="1">
+
+          <div class="form-group">
+            <label  class="control-label col-sm-2" for="excelFile">Документ</label>
+            <div id="doc" class="col-sm-10">
+              <input type="file" class="form-control-file" id="excelFile" name="excelFile">
+            </div>         
+          </div>
+
+          <div class="form-group"> 
+            <div class="col-sm-offset-2 col-sm-10">
+              <button type="submit" class="btn btn-primary" disabled>Завантажити</button>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+
+    <div class="loader">
+      <img src="loader.gif" alt="Loading...">
+    </div>
+
+  </div>
+
+
+  <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+  <script src="js/new.js"></script>
+
+</body>
+
+</html>

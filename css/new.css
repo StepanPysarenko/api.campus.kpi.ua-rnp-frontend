@@ -1,0 +1,83 @@
+@media screen and (min-width: 1370px) {
+    div.container-fluid {
+        padding: 10px 70px;
+    }
+}
+@media screen and (max-width:900px) {
+    div.header {
+        padding-left: 35px;
+    }
+}
+div.container-fluid {
+    max-width: 100%;
+    padding: 15px;
+}
+
+@media screen and (max-width: 769px) {
+    label.control-label {
+        margin-left: 25px;
+    }
+    div>select {
+        margin-left: 25px !important;
+    }
+    button.btn {
+        margin-left: 25px !important;
+    }
+    div.row >  h3 {
+        margin-left: 25px !important;
+    }
+    input[type='file'] {
+        margin-left: 25px !important;
+    }
+}
+.loading {
+    display: none;
+}
+div.loader {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -32px;
+}
+
+select {
+    width: auto !important;
+}
+
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+#debugTable th {
+    height: 180px;
+    white-space: nowrap;
+}
+
+#debugTable th > div {
+    transform: rotate(270deg);
+    width: 30px;
+}
+#debugTable th > div > span {
+    padding: 5px 10px;
+}
+div#doc{
+	margin-top: 7px;
+}
